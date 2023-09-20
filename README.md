@@ -1,2 +1,2 @@
 # test-gactions
-This is a little code for testing with Github Actions
+This is a web test in Python (using Flask) for testing with Github Actions

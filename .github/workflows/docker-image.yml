@@ -21,8 +21,8 @@ jobs:
         python-version: '3.10'
         architecture: 'x64'
         cache: pip
-    - run: pip install -r ../../requirements.txt
-    - run: python3 ../../main.py
+    - run: pip install -r requirements.txt
+    - run: python3 main.py
   deploy:
     needs: unit-tests
     runs-on: self-hosted

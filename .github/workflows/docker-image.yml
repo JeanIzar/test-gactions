@@ -18,7 +18,7 @@ jobs:
     - name: Build the Docker Image with Github Actions self-hosted
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.9'
         cache: pip
     - run: pip install -r ../../requirements.txt
     - run: python3 ../../main.py

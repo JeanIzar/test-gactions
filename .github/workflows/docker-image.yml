@@ -22,7 +22,7 @@ jobs:
         architecture: 'x64'
         cache: pip
       env:
-        AGENT_TOOLSDIRECTORY: ~/actions-runners/hostedtoolcache
+        AGENT_TOOLSDIRECTORY: /home/je4nizar/actions-runners/hostedtoolcache
     - run: pip install -r ../../requirements.txt
     - run: python3 ../../main.py
   deploy:

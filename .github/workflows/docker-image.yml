@@ -48,6 +48,6 @@ jobs:
         file: ./server/Dockerfile
         builder: ${{ steps.buildx.outputs.name }}
         push: true
-        tags: 192.168.10.120:5000/test-gactions/pythonv1:latest
-        cache-from: 'type=registry,ref=192.168.10.120:5000/test-gactions/pythonv1:buildcache'
-        cache-to: 'type=registry,ref=192.168.10.120:5000/test-gactions/pythonv1:buildcache,mode=max'
+        tags: http://192.168.10.120:5000/test-gactions/pythonv1:latest
+        cache-from: 'type=registry,ref=http://192.168.10.120:5000/test-gactions/pythonv1:buildcache'
+        cache-to: 'type=registry,ref=http://192.168.10.120:5000/test-gactions/pythonv1:buildcache,mode=max'

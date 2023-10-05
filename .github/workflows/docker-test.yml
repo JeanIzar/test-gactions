@@ -26,5 +26,4 @@ jobs:
     needs: unit-tests
     runs-on: self-hosted
     steps:
-    - name: Build Image with Docker
     - run: docker build -t python-test1 .

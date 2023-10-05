@@ -37,7 +37,7 @@ jobs:
       name: Login to private registry
       uses: docker/login-action@v1
       with:
-        registry: dincors.registry.com
+        registry: 192.168.128.145
         username: je4nizar
         password: .bat930981622
     -
@@ -48,6 +48,6 @@ jobs:
         file: ./server/Dockerfile
         builder: ${{ steps.buildx.outputs.name }}
         push: true
-        tags: dincors.registry.com/test-gactions/pythonv1:latest
-        cache-from: 'type=registry,ref=dincors.registry.com/test-gactions/pythonv1:buildcache'
-        cache-to: 'type=registry,ref=dincors.registry.com/test-gactions/pythonv1:buildcache,mode=max'
+        tags: 192.168.128.145/test-gactions/pythonv1:latest
+        cache-from: 'type=registry,ref=192.168.128.145/test-gactions/pythonv1:buildcache'
+        cache-to: 'type=registry,ref=192.168.128.145/test-gactions/pythonv1:buildcache,mode=max'

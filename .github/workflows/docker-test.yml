@@ -30,4 +30,4 @@ jobs:
         working-directory: app
 
     steps:
-    - run: docker build -t .
+    - run: docker build -t test-python-git .
